@@ -1,0 +1,33 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Business Owners Analytics</title>
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#3b82f6', // blue
+            bg: '#0f172a', // slate-900
+            card: '#1e293b', // slate-800
+            card2: '#334155' // slate-700
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body class="bg-bg text-gray-200">
+  <nav class="bg-card border-b border-slate-700 px-6 py-3 flex items-center justify-between">
+    <span class="text-lg font-bold text-white">📊 Business Owners Analytics</span>
+    <div class="flex gap-2">
+      <a class="px-3 py-1.5 rounded-md bg-accent hover:bg-blue-500 text-white text-sm" href="/download/csv">Download CSV</a>
+    </div>
+  </nav>
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    {% block content %}{% endblock %}
+  </main>
+</body>
