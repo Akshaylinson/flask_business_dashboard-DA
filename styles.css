@@ -1,0 +1,20 @@
+:root {
+  --bg: #0f1115;
+  --card: #171923;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --accent: #60a5fa;
+}
+html, body { background: var(--bg); color: var(--text); }
+.navbar, .card { background: var(--card); }
+.stat-card {
+  background: var(--card);
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid #2a2f3a;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.25);
+}
+.stat-card .label { color: var(--muted); font-size: .85rem; }
+.stat-card .value { font-size: 1.6rem; font-weight: 700; }
+.card-title { color: var(--text); margin-bottom: .75rem; }
+.table-dark { --bs-table-bg: var(--card); --bs-table-striped-bg: #1e2230; --bs-table-striped-color: var(--text); }
